@@ -5,14 +5,11 @@
  and make recommendations to them about new articles they'll like.</p>
  
 ### Motivation
-For this project I will be looking at the interactions that users have with articles on the IBM Watson Studio platform. Below It can be seen an example of what the dashboard could look like displaying articles on the IBM Platform.
-
-<img src="img/Recommendations_with_IBM.png" width="80%" alt="Recommendations with IBM">
-
-The above dashboard is just showing the newest articles. It could imagine having a recommendation board available here that shows the articles that are most pertinent to a specific user.
+For this project I will be looking at the interactions that users have with articles on the IBM Watson Studio platform.
 
 In order to determine which articles to show to each user, It will be performing a study of the data available on the [IBM Watson Studio platform](https://dataplatform.cloud.ibm.com/).
-### Libraries
+
+### Libraries Used
 <ul>
   <li>python 3.7 and above</li>
   <li>pandas</li>
@@ -25,7 +22,7 @@ In order to determine which articles to show to each user, It will be performing
   <li>jupyter</li>
 </ul>
 
-### Data
+### Data FIles
 <p>2 .csv files</p>
 <ul>
   <li>user-item-interactions.csv: Interactions between users and articles.</li>
@@ -34,19 +31,18 @@ In order to determine which articles to show to each user, It will be performing
 
 ### Overview
 #### I. Exploratory Data Analysis
-<p>Before making recommendations of any kind, you will need to explore the data you are working with for the project. 
-Dive in to see what you can find. There are some basic, required questions to be answered about the data you are 
-working with throughout the rest of the notebook. Use this space to explore, before you dive into the details of 
-your recommendation system in the later sections.</p>
+<p>Before making recommendations of any kind, explored the data for the project. 
+There are some basic, required questions to be answered about the data you are 
+working with throughout the rest of the notebook.</p>
 
 #### II. Rank Based Recommendations
-<p>To get started in building recommendations, you will first find the most popular articles simply based on 
+<p>To get started in building recommendations, first found the most popular articles simply based on 
 the most interactions. Since there are no ratings for any of the articles, it is easy to assume the articles 
 with the most interactions are the most popular. These are then the articles we might recommend to new users 
 (or anyone depending on what we know about them).</p>
 
 #### III. User-User Based Collaborative Filtering
-<p>In order to build better recommendations for the users of IBM's platform, we could look at users that are 
+<p>In order to build better recommendations for the users of IBM's platform, looked at users that are 
 similar in terms of the items they have interacted with. These items could then be recommended to the similar users. 
 This would be a step in the right direction towards more personal recommendations for the users</p>
 
